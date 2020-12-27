@@ -7,7 +7,11 @@ console.log('initial header:', headerEl.cloneNode(true));
 
 const changeHeaderTextHandler = (event) => {
   // take input from a user and set it as the target's innerHTML
-
+  var userPrompt = prompt("Please write something");
+  if (userPrompt != null) {
+    const target = event.target;
+    target.innerHTML = userPrompt;
+  }
 
 };
 
